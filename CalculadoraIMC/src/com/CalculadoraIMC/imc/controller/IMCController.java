@@ -24,7 +24,7 @@ public class IMCController implements ActionListener {
     public IMCController(VistaLogin vista) {
         this.vista = vista;
         this.vista.getBotonCalcular().addActionListener(this);
-    }// Engancha el listener al botón (es decir el listener se activa cuando hay un evento en este caso pulsar el boton y llama al metodo)
+    }// Engancha el listener al botón
 
     public void iniciar() {
         vista.setVisible(true);
@@ -35,7 +35,7 @@ public class IMCController implements ActionListener {
         if (ae.getSource() == vista.getBotonCalcular()) {
             procesarCalculo();
         }
-    }// Se ejecuta al pulsar el botón
+    }// Se ejecuta al pulsar el botón (es decir el listener se activa cuando hay un evento en este caso pulsar el boton y llama al metodo)
 
     private void procesarCalculo() {
 
