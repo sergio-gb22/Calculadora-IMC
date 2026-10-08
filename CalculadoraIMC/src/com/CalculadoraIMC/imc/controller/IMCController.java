@@ -44,13 +44,11 @@ public class IMCController implements ActionListener {
         String alturaString = vista.getAltura();
 
         try {
-            // parseo los textos a double.
-            // si el texto no es un número, salta NumberFormatException
+            // parseo los textos a double, si el texto no es un número, salta NumberFormatException
             double peso = Double.parseDouble(pesoString);
             double altura = Double.parseDouble(alturaString);
 
-            // compruebo que no sean cero ni negativos.
-            // si lo son, muestro error y salgo del método
+            // compruebo que no sean cero ni negativos, si lo son, muestro error y salgo del método
             if (peso <= 0 || altura <= 0) {
                 vista.mostrarError("El peso y la altura deben ser mayores que cero");
                 return;
