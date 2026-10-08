@@ -24,11 +24,11 @@ public class VistaLogin extends javax.swing.JFrame {
  
     public String getPeso() {
         return txtPeso.getText().trim().replace(',', '.');
-    } // Devuelve el texto del campo Peso sin espacios y con la coma cambiada a punto.
+    } // Devuelve el texto del campo Peso sin espacios y con la coma cambiada a punto, y uso el punnto ya que en el mundo de la programación el punto es el estandar para separar los decimales
 
     public String getAltura() {
         return txtAltura.getText().trim().replace(',', '.');
-    }// Devuelve el texto del campo Altura sin espacios y con la coma cambiada a punto.
+    }// Devuelve el texto del campo Altura sin espacios y con la coma cambiada a punto, y uso el punnto ya que en el mundo de la programación el punto es el estandar para separar los decimales
 
     public JButton getBotonCalcular() {
         return BotonCalcular;
